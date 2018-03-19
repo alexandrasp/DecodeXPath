@@ -14,6 +14,12 @@ def getHtmlFile(url_name, user, password):
     htmlFile = requests.get(url_name, auth=(user, password)) 
     return htmlFile
 
+def validParser(parsedContent, result):
+    if parsedContent == result:
+        return True
+    else:
+        return False
+
 for i in range(len(jsonData)):
     if i == 0:
         nextPage = jsonData[str(i)]['next_page_expected']
