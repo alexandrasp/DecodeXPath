@@ -1,7 +1,6 @@
 import lxml.html
 import yaml
 import os
-from lxml import etree
 import requests
 
 config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'systemConfig_sample.yaml')
