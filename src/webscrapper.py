@@ -1,9 +1,12 @@
 import lxml.html
 import yaml
+import os
 from lxml import etree
 import requests
 
-config = yaml.load(open('/Users/apereira/Downloads/TesteHekima/Legal/src/systemConfig.yaml'))
+
+config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'systemConfig.yaml')
+config = yaml.load(open(config_file))
 responseJson = requests.get(config['json_info']['input_json'])
 jsonData = responseJson.json()
 urlBase = config['url_info']['base_url']
