@@ -20,6 +20,12 @@ def validParser(parsedContent, result):
     else:
         return False
 
+def outputMessage(boolean, step):    
+    if boolean:
+        return "Move to page "+str(step+1)
+    else:
+        return "ALERT - Can’t move to page "+str(step+1)+": page "+str(step)+" link has been malevolently tampered with!!"
+
 for i in range(len(jsonData)):
     if i == 0:
         nextPage = jsonData[str(i)]['next_page_expected']
