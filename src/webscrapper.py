@@ -4,7 +4,6 @@ import os
 from lxml import etree
 import requests
 
-
 config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'systemConfig.yaml')
 config = yaml.load(open(config_file))
 responseJson = requests.get(config['json_info']['input_json'])
