@@ -1,0 +1,7 @@
+credentials:
+  user: 'Thumb'
+  password: 'Scraper'
+url_info:
+  base_url: 'https://yolaw-tokeep-hiring-env.herokuapp.com/'
+json_info:
+  input_json: 'https://s3-eu-west-1.amazonaws.com/legalstart/thumbscraper_input_tampered.hiring-env.json'
